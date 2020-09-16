@@ -1,0 +1,5 @@
+- name: Save Key PEM File
+  copy:
+    content: "{{ webkp.key.private_key }}"
+    dest: /etc/ansible/webenvkey.pem
+    mode: '0400'

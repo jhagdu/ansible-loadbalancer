@@ -1,0 +1,4 @@
+region: ap-south-1
+inst_type: t2.micro
+ami_id: ami-09a7bbd08886aafdf
+subnet_id: subnet-85efd5ed

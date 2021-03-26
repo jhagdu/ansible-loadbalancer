@@ -1,31 +1,50 @@
-Role Name
-=========
+AWS
+===
 
-A brief description of the role goes here.
+Ansible Role to create a AWS Infrastructure for HAProxy and Webservers
 
 Requirements
 ------------
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+AWSCLIv2 should be installed and configured  
+  
+Required Python Packages -  
+- boto  
+- boto3  
+- botocore  
+- python >= 2.6  
 
 Role Variables
 --------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+Variables which should be included in additional variable files or vault -  
+
+    aws_access_id: AWSACCESSIDHERE
+    aws_access_secret_key: AWSACCESSSECRETKEYHERE
+
+
+Variables in vars/main.yml -  
+
+    region: ap-south-1
+    inst_type: t2.micro
+    ami_id: ami-09a7bndj88a6alfif
+    subnet_id: subnet-8aefg5ed
 
 Dependencies
 ------------
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+No Dependencies on other roles or collections
 
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+aws-login.yml is a additional variable file or vault that contains required variables -
 
     - hosts: servers
+      vars_files:
+         - aws-login.yml
       roles:
-         - { role: username.rolename, x: 42 }
+         - aws
 
 License
 -------
@@ -35,4 +54,5 @@ BSD
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+Author Name: Aman Jhagrolia  
+Contact: https://www.linkedin.com/in/amanjhagrolia143  

@@ -5,12 +5,10 @@
   roles:
     - aws
 
-
 - hosts: loadbalancer
   gather_facts: False
   roles:
     - { role: loadbalancer , become: yes}
-
 
 - hosts: webserver
   roles:

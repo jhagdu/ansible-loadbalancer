@@ -32,8 +32,8 @@ Ansible Roles to configure a Webserver on Instance Dynamically launched on AWS C
 
 # Links
 
-[Click here for Article having detailed description](https://www.linkedin.com/in/amanjhagrolia143/)  
-[Post Link](https://www.linkedin.com/in/amanjhagrolia143/)
+[Click here for Article having detailed description](https://amanjhagrolia.medium.com/ansible-configure-haproxy-for-webserver-on-ec2-4a150b693bdf?sk=ef825092b449f60d1270051cb71d5956)  
+[Post Link](https://www.linkedin.com/posts/amanjhagrolia143_ansible-configure-haproxy-for-webserver-activity-6781066201947799552-Vbgk)
   
 ***Feel free to Contact if any issue!!***
 
